@@ -90,6 +90,10 @@ Au premier lancement de `chatbot.py`, les documents non encore indexés le sont 
 
 `NEVEN.bat` contient le chemin de mon ancien PC : il faut l'adapter avant de l'utiliser.
 
+## Évolution du projet
+
+L'assistant a ensuite évolué avec une interface graphique (Gradio) et la possibilité d'envoyer un fichier PDF à la question.
+
 ## Pistes d'amélioration
 
 - Utiliser l'historique fourni par Gradio dans `interface.py` au lieu d'une liste globale.
