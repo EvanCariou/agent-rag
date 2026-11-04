@@ -1,0 +1,10 @@
+# Clés API
+.env
+*.env
+# Base vectorielle (recréée par indexer.py)
+db/
+chroma_db/
+# Python
+__pycache__/
+*.pyc
+.venv/
