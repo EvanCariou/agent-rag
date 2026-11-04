@@ -90,10 +90,6 @@ Au premier lancement de `chatbot.py`, les documents non encore indexés le sont 
 
 `NEVEN.bat` contient le chemin de mon ancien PC : il faut l'adapter avant de l'utiliser.
 
-## Évolution du projet
-
-L'assistant a ensuite évolué en une version plus complète (dépôt séparé) : API avec FastAPI, interface Gradio protégée par mot de passe, bot Telegram, base de connaissance sous forme de wiki Markdown, mémoire qui s'enrichit après chaque conversation, et déploiement avec Docker sur un serveur en HTTPS.
-
 ## Pistes d'amélioration
 
 - Utiliser l'historique fourni par Gradio dans `interface.py` au lieu d'une liste globale.
