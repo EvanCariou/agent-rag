@@ -24,7 +24,7 @@ chroma_client = chromadb.PersistentClient(path=chemin_db)
 
 
 # creation de la collection pour stocker les données
-collection = chroma_client.get_or_create_collection(name = "Collection_Nevezia")
+collection = chroma_client.get_or_create_collection(name = "Collection_documents")
 #--------------------------------------------------------
 
 
