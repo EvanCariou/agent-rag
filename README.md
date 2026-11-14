@@ -1,6 +1,6 @@
-# NEVEN : assistant IA avec RAG
+# Assistant IA avec RAG
 
-NEVEN est un assistant que j'ai codé en Python. Il répond à des questions en s'appuyant sur mes propres documents, grâce à la technique du **RAG** (Retrieval-Augmented Generation). Il peut aussi chercher sur le web et lire un fichier envoyé par l'utilisateur.
+Cet assistant, codé en Python, répond à des questions en s'appuyant sur mes propres documents, grâce à la technique du **RAG** (Retrieval-Augmented Generation). Il peut aussi chercher sur le web et lire un fichier envoyé par l'utilisateur.
 
 Projet personnel réalisé en 2026, pendant ma première année de BUT Informatique à l'IUT de Lannion, pour apprendre Python et le fonctionnement des agents IA.
 
@@ -68,7 +68,7 @@ agent-rag/
 │   ├── indexer.py               ← indexation des documents dans ChromaDB
 │   ├── chatbot.py               ← assistant dans le terminal
 │   ├── interface.py             ← assistant avec interface web (Gradio)
-│   ├── NEVEN.bat                ← lancement en un clic sous Windows
+│   ├── lancer_assistant.bat     ← lancement en un clic sous Windows
 │   └── api_rag.env.example      ← modèle du fichier de clés API
 ├── documents/                   ← base de connaissance (Markdown)
 ├── db/                          ← base ChromaDB (créée au premier lancement)
@@ -88,7 +88,7 @@ agent-rag/
 
 Au premier lancement de `chatbot.py`, les documents non encore indexés le sont automatiquement. Pour l'interface, lancer d'abord `python Script_python/indexer.py`.
 
-`NEVEN.bat` contient le chemin de mon ancien PC : il faut l'adapter avant de l'utiliser.
+`lancer_assistant.bat` contient le chemin de mon ancien PC : il faut l'adapter avant de l'utiliser.
 
 ## Évolution du projet
 
