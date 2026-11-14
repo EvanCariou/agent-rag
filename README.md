@@ -88,7 +88,7 @@ agent-rag/
 
 Au premier lancement de `chatbot.py`, les documents non encore indexés le sont automatiquement. Pour l'interface, lancer d'abord `python Script_python/indexer.py`.
 
-`lancer_assistant.bat` contient le chemin de mon ancien PC : il faut l'adapter avant de l'utiliser.
+`lancer_assistant.bat` lance l'interface en un clic sous Windows (Python doit être installé).
 
 ## Évolution du projet
 
