@@ -128,8 +128,8 @@ body, .gradio-container { background-color: #0F172A !important; color: #E2E8F0 !
 footer { display: none !important; }
 """
 
-with gr.Blocks(css=css, title="NEVEN") as interface:
-    gr.Markdown("# NEVEN\nAssistant Nevezia — base de connaissance interne")
+with gr.Blocks(css=css, title="Assistant IA") as interface:
+    gr.Markdown("# Assistant IA\nAssistant Nevezia — base de connaissance interne")
     gr.ChatInterface(fn=generer_chatbot_reponse, additional_inputs=gr.File())
 
 interface.launch()
