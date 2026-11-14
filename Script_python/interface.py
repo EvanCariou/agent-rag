@@ -23,7 +23,7 @@ chemin_indexer = os.path.join(dossier, "indexer.py")
 chroma_client = chromadb.PersistentClient(path=chemin_db)
 
 # creation de la collection pour stocker les données
-collection = chroma_client.get_or_create_collection(name="Collection_Nevezia")
+collection = chroma_client.get_or_create_collection(name="Collection_documents")
 
 
 #--------------------------------------------------------
@@ -91,7 +91,7 @@ def generer_chatbot_reponse(question ,historique, fichier):
     contexte_fichier = telecharger_fichier(question, fichier)
     contexte_web = "\n".join(reponse_web)
     contexte_interne = "\n".join(results["documents"][0])
-    question_contexte = f"Contexte interne Nevezia:\n{contexte_interne}\n\n Résultats web:\n{contexte_web}\n\nQuestion: {question} \n\n Fichier{contexte_fichier}"
+    question_contexte = f"Contexte interne:\n{contexte_interne}\n\n Résultats web:\n{contexte_web}\n\nQuestion: {question} \n\n Fichier{contexte_fichier}"
 
         # ajout de la question de l'utilisateur pour la memoire
     messages.append({"role": "user", "content": question_contexte })
@@ -129,7 +129,7 @@ footer { display: none !important; }
 """
 
 with gr.Blocks(css=css, title="Assistant IA") as interface:
-    gr.Markdown("# Assistant IA\nAssistant Nevezia — base de connaissance interne")
+    gr.Markdown("# Assistant IA\nBase de connaissance interne")
     gr.ChatInterface(fn=generer_chatbot_reponse, additional_inputs=gr.File())
 
 interface.launch()
